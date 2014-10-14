@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="pp-wrap">
+        <div class="pp-row">
+            <div class="col-md-3">
+                <div class="pp-sidebar">
+                    <h4 class="text-uppercase">LOREM IPSUM DOLOR SIT AMET LOREM IPSUM</h4>
+                    <hr class="line">
+                    <ul>
+                        <li>Photography</li>
+                        <li>Magazine</li>
+                        <li>Model</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget nisi mi. Donec facilisis tellus sit amet massa porta, at tempor felis commodo. Nulla et imperdiet ipsum, a mattis justo. Vivamus auctor mattis arcu in malesuada. Aliquam venenatis diam quis lorem ultrices, eget tincidunt lorem semper. Vestibulum eu nulla eget nisl tempus consectetur. Maecenas elit magna, fringilla sed leo a, tempus tincidunt tortor. Nulla facilisi. Donec nec ultricies sem. Nam a lacus eget massa bibendum pellentesque. Mauris ante libero, dignissim eget odio sit amet, congue commodo sapien. Integer eget nisl nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent adipiscing posuere ligula, et vestibulum urna vestibulum a. In nec sapien lorem. Nam hendrerit mattis vehicula. Morbi dapibus sagittis pharetra. Donec lorem eros, vehicula a varius vitae, pharetra vel ante. Nulla bibendum
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget nisi mi. Donec facilisis tellus sit amet massa porta, at tempor felis commodo. Nulla et imperdiet ipsum, a mattis justo. Vivamus auctor mattis arcu in malesuada. Aliquam venenatis diam quis lorem ultrices, eget tincidunt lorem semper. Vestibulum eu nulla eget nisl tempus consectetur. Maecenas elit magna, fringilla sed leo a, tempus tincidunt tortor. Nulla facilisi. Donec nec ultricies sem. Nam a lacus eget massa bibendum pellentesque. Mauris ante libero, dignissim eget odio sit amet, congue commodo sapien. Integer eget nisl nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent adipiscing posuere ligula, et vestibulum urna vestibulum a. In nec sapien lorem. Nam hendrerit mattis vehicula. Morbi dapibus sagittis pharetra. Donec lorem eros, vehicula a varius vitae, pharetra vel ante. Nulla bibendum
+                    </p>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-tumblr"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="pp-content">
+                    <div class="pp-slider">
+                        <div class="item"><img src="images/work/pp-slider.jpg" alt=""></div>
+                        <div class="item"><img src="images/work/pp-slider.jpg" alt=""></div>
+                        <div class="item"><img src="images/work/pp-slider.jpg" alt=""></div>
+                        <div class="item"><img src="images/work/pp-slider.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // SLIDER
+    $(".pp-slider").owlCarousel({
+        autoPlay: 10000,
+        navigation: false,
+        slideSpeed: 1000,
+        transitionStyle: 'fade',
+        singleItem:true,
+        pagination: true
+    });
+    // SCROLL BAR
+    $(".pp-sidebar p").niceScroll({
+        scrollspeed: 50,
+        mousescrollstep: 35,
+        cursorborder: 0,
+        horizrailenabled: false,
+        cursorborderradius: 0,
+        cursoropacitymin: "visible",
+        cursorcolor: "#f2b23d",
+        background: "#ccc",
+        cursorwidth: 6
+    });
+</script>

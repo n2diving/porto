@@ -1,0 +1,70 @@
+.head-title h1,
+.cs-scroll .fa,
+.big,
+.lg,
+.about-content .item h4,
+.about-content .item p.color,
+.service-content .item .icon,
+.funfact-slider .item .icon,
+.service-content .item h4 a,
+.blog-time-content .post .post-title h4 a:hover,
+.single-content .post .post-meta-author a,
+.single-content .author-info .author-info-body span a,
+.post-content-slider h4,
+#comments cite.fn a,
+#comments .comment-meta .reply a,
+.pp-contact h5,
+.work-wrap-1 .item .icon-wrap .icon,
+.owl-buttons .fa {
+	color: #8FC84A;
+}
+
+.preloader .pre-icon:before,
+.preloader .pre-icon:after,
+.bg-color-2,
+.head-title hr.line,
+.cs-scroll .line-1, .cs-scroll .line-2, .cs-scroll .line-3, .cs-scroll .line-4,
+.navigation .nav li.active a:before,
+.andmore-content .item:after,
+.service-content .item:hover,
+.ser-link .dl-quote,
+.blog-time-content .post:before, .blog-time-content .post:after,
+.blog-time-content .load-btn a,
+.copyright,
+.funfact .title hr.line,
+.blog-time-content .post .post-body .read:hover,
+.sidebar,
+.sidebar:after,
+#respond .form-submit button,
+.pp-contact .contact-form button.submit,
+.pp-slider .owl-pagination .owl-page.active span {
+	background-color: #8FC84A;
+}
+
+.btn-style-1:hover {
+    background-color: #71A532; /* darker */
+}
+
+.testimonial .item .image,
+.andmore-content .item:before,
+.pre-item {
+	border-color: #8FC84A;
+}
+
+.andmore:before {
+	border-top-color: #8FC84A;
+}
+
+.cs-scroll:hover {
+  box-shadow: inset 0 0 0 30px #8FC84A;
+}
+
+.team-content .item .hiring {
+	background-color: #02151A;
+}
+.overlay-pattern-2 {
+  background: url('../../images/pattern-2-green.png') repeat;
+}
+.about-content .item ul li:before {
+  background: url('../../images/list-icon-green.png') no-repeat;
+}

@@ -33,8 +33,7 @@ String.prototype.rightChars = function(n){
     typeWithAttribute,
     getHighlightInterval,
     getTypeInterval,
-    typerInterval,
-    counter = 0;
+    typerInterval;
 
   spanWithColor = function(color, backgroundColor) {
     if (color === 'rgba(0, 0, 0, 0)') {
@@ -51,8 +50,6 @@ String.prototype.rightChars = function(n){
   };
 
   clearData = function ($e) {
-    if (counter == 3) counter = 1;
-    else counter++;
     $e.removeData([
       'typePosition',
       'highlightPosition',
@@ -61,16 +58,13 @@ String.prototype.rightChars = function(n){
       'primaryColor',
       'backgroundColor',
       'text',
-      'typing',
-      'position',
-      'oldLeft',
-      'oldRight'
+      'typing'
     ]);
   };
 
   type = function ($e) {
     var
-      position = $e.data('typePosition'),
+      // position = $e.data('typePosition'),
       text = $e.data('text'),
       oldLeft = $e.data('oldLeft'),
       oldRight = $e.data('oldRight');
@@ -94,9 +88,9 @@ String.prototype.rightChars = function(n){
       text: text.substring(1)
     });
 
-    //$e.text($e.text() + text.substring(position, position + 1));
+    // $e.text($e.text() + text.substring(position, position + 1));
 
-    //$e.data('typePosition', position + 1);
+    // $e.data('typePosition', position + 1);
 
     setTimeout(function () {
       type($e);
@@ -104,8 +98,7 @@ String.prototype.rightChars = function(n){
   };
 
   clearText = function ($e) {
-//    $e.find('span').remove();
-    $e.text('');
+    $e.find('span').remove();
 
     setTimeout(function () {
       type($e);
@@ -131,7 +124,6 @@ String.prototype.rightChars = function(n){
     }
 
     leftText = $e.text().substring(0, position - 1);
-    //highlightedText = $e.text().substring(position - 1, $e.data('rightStop') + 1);
     highlightedText = $e.text().substring(position - 1, $e.data('rightStop') + 1);
     rightText = $e.text().substring($e.data('rightStop') + 1);
 
@@ -169,8 +161,7 @@ String.prototype.rightChars = function(n){
       });
     }
 
-//    $e.typeTo(targets[Math.floor(Math.random()*targets.length)]);
-  $e.typeTo(targets[counter||2]);
+    $e.typeTo(targets[Math.floor(Math.random()*targets.length)]);
   };
 
   // Expose our options to the world.
@@ -233,10 +224,8 @@ String.prototype.rightChars = function(n){
     $e.data({
       oldLeft: currentText.substring(0, i),
       oldRight: currentText.rightChars(j - 1),
-      leftStop: 0,
-      rightStop: 8,
-      //leftStop: i,
-      //rightStop: currentText.length - j,
+      leftStop: i,
+      rightStop: currentText.length - j,
       primaryColor: $e.css('color'),
       backgroundColor: $e.css('background-color'),
       text: newString

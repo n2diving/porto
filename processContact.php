@@ -37,14 +37,14 @@ if($errors) {
 	die("<div class='thanks failure'>The following errors occured:<ul>". $errortext ."</ul></div>");
 }
 // Send the email
-$to = "info@megadrupal.com";
+$to = "alexis@gormley-design.com";
 $subject = "Contact Form: $name";
 $headers = "From: $email";
 
 mail($to, $subject, $message, $headers);
 
 // Die with a success message
-die("<div class='thanks'>Thanks for submitting your email! Our manager will contact you shortly.</div>");
+die("<div class='thanks'>Thanks for submitting your email! We will contact you shortly.</div>");
 
 // A function that checks to see if
 // an email is valid
